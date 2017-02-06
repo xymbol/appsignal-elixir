@@ -173,6 +173,7 @@ static ERL_NIF_TERM _finish_event_data(ErlNifEnv* env, int argc, const ERL_NIF_T
         0
     );
 
+    printf("%p\n", body);
     return enif_make_atom(env, "ok");
 }
 

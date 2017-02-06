@@ -57,7 +57,8 @@ defmodule Appsignal.Mixfile do
       {:decorator, "~> 1.0"},
       {:phoenix, "~> 1.2.0", optional: true, only: [:prod, :test_phoenix]},
       {:mock, "~> 0.1.1", only: [:test, :test_phoenix]},
-      {:ex_doc, "~> 0.12", only: :dev}
+      {:ex_doc, "~> 0.12", only: :dev},
+      {:benchfella, "~> 0.3.0", only: :dev}
     ]
   end
 end
