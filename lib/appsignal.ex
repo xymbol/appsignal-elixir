@@ -38,6 +38,10 @@ defmodule Appsignal do
     Application.get_application(Appsignal) != nil
   end
 
+  def plug? do
+    Code.ensure_loaded?(Plug)
+  end
+
   def phoenix? do
     Code.ensure_loaded?(Phoenix)
   end
